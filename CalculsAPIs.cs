@@ -49,7 +49,8 @@ namespace OC_Calculus_WCFService
 
             foreach (string terme in termes)
             {
-                if (termes.Length == 1) // traite le cas de la chaine  == "n" ou "n-m..."  pour oper=='+' , sachant que "n" est un réel de type signé
+                count++;
+				if (termes.Length == 1) // traite le cas de la chaine  == "n" ou "n-m..."  pour oper=='+' , sachant que "n" est un réel de type signé
                 {
 
                     resultat += oper.Equals('+') ? traiteChaineOperationNP(terme, '-') : convertStringToDouble(terme); ;
