@@ -68,7 +68,7 @@ namespace OC_Calculus_WCFService
                         resultat += traiteChaineOperationNP(terme, '-');
                     else
                     {    //oper.Equals('-')
-                        if (resultat == 0 && termes[0] != "")  // cas du premier élément non négatif  si oper =='-'
+                        if (count == 0 && termes[0] != "")  // cas du premier élément non négatif  si oper =='-'
                             resultat += convertStringToDouble(terme);
                         else
                             resultat -= convertStringToDouble(terme);
