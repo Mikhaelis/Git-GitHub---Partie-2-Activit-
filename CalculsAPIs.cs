@@ -42,6 +42,7 @@ namespace OC_Calculus_WCFService
         {
 
             double resultat = 0;
+			int count = 0;
             if (chaine.Equals("")) return resultat;  // le cas de la chaine vide est traité d'emblée
             string[] termes = chaine.Split(oper); //laissera le premier terme == "" si oper=='-' (en raison de la possibilité d'avoir un '-' en début de chaine)
 
