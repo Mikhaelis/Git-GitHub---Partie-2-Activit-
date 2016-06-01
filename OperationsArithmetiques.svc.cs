@@ -38,12 +38,12 @@ namespace OC_Calculus_WCFService
         public double Plus(double nb1, double nb2) //1. Plus
         {
             
-            return  Math.Round((nb1 + nb2),3);   
+            return  nb1 + nb2;   
         }
 
         public double Moins(double nb1, double nb2) //2. Moins
         {
-            return (double) Math.Round((nb1 - nb2), 3);
+            return nb1 - nb2;
         }
 
         public double Diviser(double nb1, double nb2) //3. Diviser
@@ -53,12 +53,12 @@ namespace OC_Calculus_WCFService
              comme donnant 0, au lieu de soulever l'exception dans le cas où l'utilisateur fera une telle division interdite
 
             */
-            return (double)(nb2==0 ? 0 : Math.Round((nb1 / nb2), 1));  
+            return (nb2==0 ? 0 : nb1 / nb2);  
         }
 
         public double Multiplier(double nb1, double nb2) //4. Multiplier
         {
-            return (double) Math.Round((nb1 * nb2), 2);
+            return nb1 * nb2;
         }
 
         public bool EstMultipleDe(int nb1, int nb2) //5. EstMultipleDe
